@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Not Found | Timely</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="Brand/icon.png">
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("second-hand").style.transform = "rotate(354deg)";
+        setTimeout(function() {
+          document.getElementById("second-hand").style.transform = "rotate(0deg)";
+				document.getElementById("digital-mins").innerHTML = "04";
+        }, 1000);
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navcontent">
+        <img src="Brand/logo.png">
+      </div>
+    </div>
+    <div id="clock"></div>
+    <div id="second-hand"></div>
+    <div class="clock-elements">
+      <h1 id="digital-hrs">04</h1>
+      <div class="brmedium"></div>
+      <h1 id="digital-mins">03</h1>
+    </div>
+    <center>
+      <h1 style="margin-top: -25px;color: #095;">Page Not Found</h1>
+    </center>
+    <div class="footer">
+      <p>&nbsp; <a href="./">&copy;2021 Timely</a></p>
+    </div>
+  </body>
+</html>

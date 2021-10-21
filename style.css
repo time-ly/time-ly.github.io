@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  font-family: DM Sans, Helvetica, sans-serif;
+}
+
+body {
+  background: #9EE0AE;
+}
+
+#clock {
+  background: url(Backgrounds/wavy-green.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin-left: 38.5%;
+  margin-top: 10vh;
+  -webkit-animation: rotate 10s linear infinite;
+}
+
+#second-hand {
+  background: url(Backgrounds/wavy-green-dot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin-left: 38.5%;
+  margin-top: -300px;
+  transform: rotate(348deg);
+}
+
+.clock-elements {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -270px;
+  margin-left: 38.5%;
+}
+
+#digital-hrs, #digital-mins {
+  font-size: 60px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+#digital-hrs {
+  color: black;
+  margin-top: -65px;
+}
+
+#digital-mins {
+  color: #095;
+}
+
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+}
+
+.navcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navcontent img {
+  width: 100px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+a {
+  color: #095;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
